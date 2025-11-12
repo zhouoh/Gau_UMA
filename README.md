@@ -22,14 +22,6 @@ The server component (`GauUMA_server.py`) handles the Gaussian calculations. To 
 python GauUMA_server.py
 ```
 
-### Running the Client
-
-The client component (`GauUMA_client.py`) interacts with the server to submit calculations and retrieve results. To run the client, use:
-
-```bash
-python GauUMA_client.py
-```
-
 ### Examples
 
 The `example/` directory contains sample Gaussian input files (`.gjf`) and their corresponding output files (`.log`) that can be used for testing and demonstration purposes.
