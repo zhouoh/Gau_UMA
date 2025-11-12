@@ -19,7 +19,7 @@ bohr2angstrom = 0.529177249
 angstrom2bohr = 1.0/bohr2angstrom
 ev2hartree = 0.036749322
 
-def send_object(sock, obj): 
+def send_object(sock, obj):
     data = pickle.dumps(obj)
     message_header = struct.pack('Q', len(data))
     sock.sendall(message_header)

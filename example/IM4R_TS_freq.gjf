@@ -1,5 +1,5 @@
 %nproc=1
-c
+#P freq  external='python ../GauUMA_client.py'
 
 t 
 
