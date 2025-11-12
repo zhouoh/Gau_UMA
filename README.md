@@ -7,7 +7,7 @@ This project provides a client-server application for interacting with Gaussian 
 To set up the project, first clone the repository and then install the required dependencies:
 
 ```bash
-git clone https://github.com/your-repo/Gau_UMA.git # Replace with actual repo URL
+git clone https://github.com/zhouoh/Gau_UMA
 cd Gau_UMA
 pip install -r requirements.txt
 ```
