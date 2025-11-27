@@ -1,6 +1,7 @@
 from ase.build import molecule
 import ase
 from fairchem.core import pretrained_mlip, FAIRChemCalculator
+from fairchem.core.units.mlip_unit.api.inference import InferenceSettings
 import numpy as np
 import pickle
 import socket
@@ -8,7 +9,7 @@ import struct
 import io
 import json
 import logging
-from fairchem.core.units.mlip_unit.api.inference import InferenceSettings
+
 
 
 MODEL_NAME = "uma-s-1p1"
@@ -55,16 +56,12 @@ def receive_calculation_job(sock):
     return metadata, xyz_content
 
 def Energy(atoms):
-    """
-    计算分子的能量和力。
-    """
+
     energy = atoms.get_potential_energy() * ev2hartree
     return energy
 
 def Force(atoms):
-    """
-    计算分子的力。
-    """
+    
     forces = -1 * atoms.get_forces() * ev2hartree / angstrom2bohr
     return forces
 
