@@ -14,7 +14,7 @@ import logging
 
 MODEL_NAME = "uma-s-1p1"
 PORT = 50423
-BATCH_size = 8
+
 
 bohr2angstrom = 0.529177249
 angstrom2bohr = 1.0/bohr2angstrom
